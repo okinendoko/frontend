@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Portfolio project placeholder</title>
+  <desc id="desc">Abstract design artwork marked as a placeholder for future portfolio work.</desc>
+  <rect width="800" height="560" fill="#dce7f8"/>
+  <path d="M0 420 260 150l170 175 135-126 235 220v141H0Z" fill="#b3c8e8"/>
+  <path d="m0 485 205-180 202 191 163-164 230 171v57H0Z" fill="#88a4ce"/>
+  <circle cx="577" cy="157" r="66" fill="#f5f8fd" opacity=".85"/>
+  <rect x="245" y="173" width="310" height="220" fill="#fff" opacity=".77"/>
+  <rect x="274" y="203" width="91" height="91" fill="#2765dc" opacity=".88"/>
+  <path d="m382 280 70-59 76 83H382Z" fill="#c0f0df"/>
+  <rect x="274" y="317" width="239" height="9" fill="#8ba0bd"/>
+  <rect x="274" y="341" width="178" height="7" fill="#b2bfd0"/>
+  <text x="400" y="473" fill="#243a5e" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle" letter-spacing="3">PROJECT PLACEHOLDER</text>
+</svg>

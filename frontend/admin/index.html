@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101c2d">
+  <title>Admin Console | Okine Augustine</title>
+  <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+  <main class="auth-screen" id="login-view">
+    <section class="login-panel" aria-labelledby="login-title">
+      <a class="admin-mark" href="/">OA<span>.</span></a>
+      <p class="overline">OKINE AUGUSTINE · ADMIN</p>
+      <h1 id="login-title">Welcome back.</h1>
+      <p class="login-lede">Sign in to manage your website content and enquiries.</p>
+      <form id="login-form" class="stack-form">
+        <label>Email<input name="email" type="email" autocomplete="username" required></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+        <button class="button primary full" type="submit">Sign in <span aria-hidden="true">↗</span></button>
+        <p class="form-message" id="login-message" role="status"></p>
+      </form>
+      <a class="back-link" href="/">← Back to public website</a>
+    </section>
+    <aside class="login-aside"><div class="aside-art" aria-hidden="true"><div></div><span>OA</span></div><p>One place for the work, the details and what comes next.</p><span>PRIVATE ADMIN AREA</span></aside>
+  </main>
+
+  <div class="app-shell" id="app-view" hidden>
+    <aside class="sidebar" id="sidebar">
+      <a class="sidebar-brand" href="/"><span class="brand-symbol">OA<span>.</span></span><span><b>OKINE AUGUSTINE</b><small>ADMIN CONSOLE</small></span></a>
+      <nav class="side-nav" aria-label="Admin sections">
+        <p>WORKSPACE</p>
+        <button data-section="overview" class="side-link active"><span>◫</span>Dashboard</button>
+        <button data-section="services" class="side-link"><span>⌘</span>Services</button>
+        <button data-section="portfolio" class="side-link"><span>▧</span>Portfolio</button>
+        <button data-section="faqs" class="side-link"><span>?</span>FAQs</button>
+        <p>INBOX</p>
+        <button data-section="bookings" class="side-link"><span>◷</span>Bookings <b class="nav-count" data-count="bookings"></b></button>
+        <button data-section="quote-requests" class="side-link"><span>↗</span>Quote Requests <b class="nav-count" data-count="quotes"></b></button>
+        <button data-section="contact-requests" class="side-link"><span>✉</span>Contact Requests <b class="nav-count" data-count="contacts"></b></button>
+        <button data-section="customers" class="side-link"><span>♙</span>Customers</button>
+        <p>WEBSITE</p>
+        <button data-section="business" class="side-link"><span>◉</span>Business Information</button>
+        <button data-section="settings" class="side-link"><span>⚙</span>Website Settings</button>
+        <button data-section="social-links" class="side-link"><span>◎</span>Social Links</button>
+        <button data-section="media" class="side-link"><span>▤</span>Media</button>
+        <p>ACCOUNT</p>
+        <button data-section="account" class="side-link"><span>♧</span>Admin Account</button>
+      </nav>
+      <div class="sidebar-bottom"><span class="online-dot"></span><span>Website admin</span><button id="logout-button" class="logout-button" type="button" title="Log out" aria-label="Log out">↪</button></div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar"><button id="sidebar-toggle" class="icon-button mobile-only" type="button" aria-label="Open navigation">☰</button><div class="topbar-crumb"><span>Admin</span><b>/</b><strong id="current-section-label">Dashboard</strong></div><div class="topbar-right"><a class="view-site" href="/" target="_blank" rel="noopener">View website ↗</a><span class="avatar">OA</span></div></header>
+      <main class="main-content" id="section-content" tabindex="-1"></main>
+    </div>
+  </div>
+  <dialog class="editor-dialog" id="editor-dialog"><form id="editor-form" method="dialog"><div class="dialog-top"><div><p class="overline" id="editor-kicker">MANAGE CONTENT</p><h2 id="editor-title">Add record</h2></div><button type="button" class="icon-button" data-close-dialog aria-label="Close">×</button></div><div class="editor-fields" id="editor-fields"></div><p id="editor-message" class="form-message" role="status"></p><div class="dialog-actions"><button class="button subtle" type="button" data-close-dialog>Cancel</button><button class="button primary" type="submit">Save changes</button></div></form></dialog>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+  <script src="/js/public-config.js" defer></script>
+  <script src="/admin/admin.js" defer></script>
+</body>
+</html>
